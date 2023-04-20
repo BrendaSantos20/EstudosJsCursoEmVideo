@@ -3,3 +3,17 @@ body {
     color: black;
     font: normal 20pt Arial;
 }
+
+h1 {
+    font-size: 35px;
+}
+
+.box {
+    margin-top: 50px;
+    width: 150px;
+    height: 150px;
+    /* background-color: plum; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
