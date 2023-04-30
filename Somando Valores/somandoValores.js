@@ -1,9 +1,19 @@
+const txt1 = window.document.getElementById("txt-1");
+const txt2 = window.document.getElementById("txt-2");
+const res = window.document.getElementById("res");
+
+
 function somar() {
-    var tn1 = window.document.getElementById('txt-1');
-    var tn2 = window.document.getElementById('txt-2');
-    var res = window.document.getElementById('res')
-    var n1 = Number(tn1.value);
-    var n2 = Number(tn2.value);
-    var s = n1 + n2;
-    res.innerHTML = ` A soma entre ${n1} e ${n2} é igual a: ${s}`;
-} 
+
+}
+function render() {
+    const number1 = Number(txt1.value);
+    const number2 = Number(txt2.value);
+
+    const soma = number1 + number2;
+    res.innerHTML = ` O resultado de ${number1} + ${number2} é ${soma}.`
+    requestAnimationFrame(render)
+}
+
+const a = requestAnimationFrame(render)
+console.log(a)
